@@ -1,0 +1,131 @@
+<rsb:script xmlns:rsb="http://www.rssbus.com/ns/rsbscript/2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from JSON. -->
+  <rsb:info title="Crews" desc="Generated schema file." xmlns:other="http://www.rssbus.com/ns/rsbscript/2/other">
+    <!-- You can modify the name, type, and column size here. -->
+    <attr name="address.building"                     xs:type="string"   readonly="false"              other:xPath="/json/address/building"                     />
+    <attr name="address.city"                         xs:type="string"   readonly="false"              other:xPath="/json/address/city"                         />
+    <attr name="address.country_number"               xs:type="integer"  readonly="false"              other:xPath="/json/address/country_number"               />
+    <attr name="address.literal_yomi"                 xs:type="string"   readonly="false"              other:xPath="/json/address/literal_yomi"                 />
+    <attr name="address.pref"                         xs:type="string"   readonly="false"              other:xPath="/json/address/pref"                         />
+    <attr name="address.street"                       xs:type="string"   readonly="false"              other:xPath="/json/address/street"                       />
+    <attr name="address.zip_code"                     xs:type="string"   readonly="false"              other:xPath="/json/address/zip_code"                     />
+    <attr name="bank_accounts"                        xs:type="string"   readonly="false"              other:xPath="/json/bank_accounts"                        />
+    <attr name="birth_at"                             xs:type="date"     readonly="false"              other:xPath="/json/birth_at"                             />
+    <attr name="biz_establishment_id"                 xs:type="string"   readonly="false"              other:xPath="/json/biz_establishment_id"                 />
+    <attr name="business_first_name"                  xs:type="string"   readonly="false"              other:xPath="/json/business_first_name"                  />
+    <attr name="business_first_name_yomi"             xs:type="string"   readonly="false"              other:xPath="/json/business_first_name_yomi"             />
+    <attr name="business_last_name"                   xs:type="string"   readonly="false"              other:xPath="/json/business_last_name"                   />
+    <attr name="business_last_name_yomi"              xs:type="string"   readonly="false"              other:xPath="/json/business_last_name_yomi"              />
+    <attr name="commutation_1_expenses"               xs:type="integer"  readonly="false"              other:xPath="/json/commutation_1_expenses"               />
+    <attr name="commutation_1_period"                 xs:type="string"   readonly="false"              other:xPath="/json/commutation_1_period"                 />
+    <attr name="commutation_1_single_fare"            xs:type="integer"  readonly="false"              other:xPath="/json/commutation_1_single_fare"            />
+    <attr name="commutation_2_expenses"               xs:type="integer"  readonly="false"              other:xPath="/json/commutation_2_expenses"               />
+    <attr name="commutation_2_period"                 xs:type="string"   readonly="false"              other:xPath="/json/commutation_2_period"                 />
+    <attr name="commutation_2_single_fare"            xs:type="integer"  readonly="false"              other:xPath="/json/commutation_2_single_fare"            />
+    <attr name="created_at"                           xs:type="datetime" readonly="false"              other:xPath="/json/created_at"                           />
+    <attr name="custom_fields"                        xs:type="string"   readonly="false"              other:xPath="/json/custom_fields"                        />
+    <attr name="department"                           xs:type="string"   readonly="false"              other:xPath="/json/department"                           />
+    <attr name="departments"                          xs:type="string"   readonly="false"              other:xPath="/json/departments"                          />
+    <attr name="email"                                xs:type="string"   readonly="false"              other:xPath="/json/email"                                />
+    <attr name="emergency_address.building"           xs:type="string"   readonly="false"              other:xPath="/json/emergency_address/building"           />
+    <attr name="emergency_address.city"               xs:type="string"   readonly="false"              other:xPath="/json/emergency_address/city"               />
+    <attr name="emergency_address.country_number"     xs:type="integer"  readonly="false"              other:xPath="/json/emergency_address/country_number"     />
+    <attr name="emergency_address.literal_yomi"       xs:type="string"   readonly="false"              other:xPath="/json/emergency_address/literal_yomi"       />
+    <attr name="emergency_address.pref"               xs:type="string"   readonly="false"              other:xPath="/json/emergency_address/pref"               />
+    <attr name="emergency_address.street"             xs:type="string"   readonly="false"              other:xPath="/json/emergency_address/street"             />
+    <attr name="emergency_address.zip_code"           xs:type="string"   readonly="false"              other:xPath="/json/emergency_address/zip_code"           />
+    <attr name="emergency_first_name"                 xs:type="string"   readonly="false"              other:xPath="/json/emergency_first_name"                 />
+    <attr name="emergency_first_name_yomi"            xs:type="string"   readonly="false"              other:xPath="/json/emergency_first_name_yomi"            />
+    <attr name="emergency_last_name"                  xs:type="string"   readonly="false"              other:xPath="/json/emergency_last_name"                  />
+    <attr name="emergency_last_name_yomi"             xs:type="string"   readonly="false"              other:xPath="/json/emergency_last_name_yomi"             />
+    <attr name="emergency_relation_name"              xs:type="string"   readonly="false"              other:xPath="/json/emergency_relation_name"              />
+    <attr name="emergency_tel_number"                 xs:type="string"   readonly="false"              other:xPath="/json/emergency_tel_number"                 />
+    <attr name="emp_code"                             xs:type="string"   readonly="false"              other:xPath="/json/emp_code"                             />
+    <attr name="emp_status"                           xs:type="string"   readonly="false"              other:xPath="/json/emp_status"                           />
+    <attr name="emp_type"                             xs:type="string"   readonly="false"              other:xPath="/json/emp_type"                             />
+    <attr name="employment_type.created_at"           xs:type="datetime" readonly="false"              other:xPath="/json/employment_type/created_at"           />
+    <attr name="employment_type.id"                   xs:type="integer"  readonly="false"              other:xPath="/json/employment_type/id"                   />
+    <attr name="employment_type.name"                 xs:type="string"   readonly="false"              other:xPath="/json/employment_type/name"                 />
+    <attr name="employment_type.preset_type"          xs:type="string"   readonly="false"              other:xPath="/json/employment_type/preset_type"          />
+    <attr name="employment_type.updated_at"           xs:type="datetime" readonly="false"              other:xPath="/json/employment_type/updated_at"           />
+    <attr name="entered_at"                           xs:type="date"     readonly="false"              other:xPath="/json/entered_at"                           />
+    <attr name="first_name"                           xs:type="string"   readonly="false"              other:xPath="/json/first_name"                           />
+    <attr name="first_name_yomi"                      xs:type="string"   readonly="false"              other:xPath="/json/first_name_yomi"                      />
+    <attr name="gender"                               xs:type="string"   readonly="false"              other:xPath="/json/gender"                               />
+    <attr name="having_spouse"                        xs:type="boolean"  readonly="false"              other:xPath="/json/having_spouse"                        />
+    <attr name="id"                                   xs:type="string"   readonly="false"              other:xPath="/json/id"                                   />
+    <attr name="last_name"                            xs:type="string"   readonly="false"              other:xPath="/json/last_name"                            />
+    <attr name="last_name_yomi"                       xs:type="string"   readonly="false"              other:xPath="/json/last_name_yomi"                       />
+    <attr name="nearest_station_and_line"             xs:type="string"   readonly="false"              other:xPath="/json/nearest_station_and_line"             />
+    <attr name="occupation"                           xs:type="string"   readonly="false"              other:xPath="/json/occupation"                           />
+    <attr name="position"                             xs:type="string"   readonly="false"              other:xPath="/json/position"                             />
+    <attr name="profile_images"                       xs:type="string"   readonly="false"              other:xPath="/json/profile_images"                       />
+    <attr name="resident_card_address.building"       xs:type="string"   readonly="false"              other:xPath="/json/resident_card_address/building"       />
+    <attr name="resident_card_address.city"           xs:type="string"   readonly="false"              other:xPath="/json/resident_card_address/city"           />
+    <attr name="resident_card_address.country_number" xs:type="integer"  readonly="false"              other:xPath="/json/resident_card_address/country_number" />
+    <attr name="resident_card_address.literal_yomi"   xs:type="string"   readonly="false"              other:xPath="/json/resident_card_address/literal_yomi"   />
+    <attr name="resident_card_address.pref"           xs:type="string"   readonly="false"              other:xPath="/json/resident_card_address/pref"           />
+    <attr name="resident_card_address.street"         xs:type="string"   readonly="false"              other:xPath="/json/resident_card_address/street"         />
+    <attr name="resident_card_address.zip_code"       xs:type="string"   readonly="false"              other:xPath="/json/resident_card_address/zip_code"       />
+    <attr name="resigned_at"                          xs:type="date"     readonly="false"              other:xPath="/json/resigned_at"                          />
+    <attr name="resigned_reason"                      xs:type="string"   readonly="false"              other:xPath="/json/resigned_reason"                      />
+    <attr name="resume1.file_name"                    xs:type="string"   readonly="false"              other:xPath="/json/resume1/file_name"                    />
+    <attr name="resume1.url"                          xs:type="string"   readonly="false"              other:xPath="/json/resume1/url"                          />
+    <attr name="resume2.file_name"                    xs:type="string"   readonly="false"              other:xPath="/json/resume2/file_name"                    />
+    <attr name="resume2.url"                          xs:type="string"   readonly="false"              other:xPath="/json/resume2/url"                          />
+    <attr name="tel_number"                           xs:type="string"   readonly="false"              other:xPath="/json/tel_number"                           />
+    <attr name="updated_at"                           xs:type="datetime" readonly="false"              other:xPath="/json/updated_at"                           />
+    <attr name="user_id"                              xs:type="string"   readonly="false"              other:xPath="/json/user_id"                              />
+  </rsb:info>
+
+  <rsb:set attr="DataModel" value="DOCUMENT" />
+
+  <rsb:set attr="JSONPath" value="$." />
+
+  <rsb:set attr="Enablepaging" value="TRUE" />
+  <rsb:set attr="PerPage" value="100" />
+  <rsb:set attr="PageCount" value="[rows@next | def('1') | add()]" />
+
+  <rsb:set attr="Endpoint" value="https://[_connection.TenantId].smarthr.jp/api/[_connection.ApiVersion]/" />
+  <rsb:set attr="TableName" value="crews" />
+  <rsb:set attr="Uri" value="[Endpoint][TableName]?page=[PageCount]&per_page=[PerPage]" />
+
+  <rsb:set attr="header:name" value="ACCESS_TOKEN"/>
+  <rsb:set attr="header:value" value="[_connection.AccessToken]"/>
+
+  <!-- The GET method corresponds to SELECT. Here you can override the default processing of the SELECT statement. The results of processing are pushed to the schema's output. See SELECT Execution for more information. -->
+  <rsb:script method="GET">
+    <rsb:call op="jsonproviderGet">
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+  <!-- To add support for INSERTS please see the INSERT Execution page within the help for further information and examples. -->
+  <rsb:script method="POST">
+    <rsb:set attr="method" value="POST"/>
+    <rsb:call op="jsonproviderGet">
+      <rsb:throw code="500" desc="Inserts are not currently supported."/>
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+  <!-- To add support for UPDATES please see the UPDATE Execution page within the help for further information and examples. -->
+  <rsb:script method="MERGE">
+    <rsb:set attr="method" value="PUT"/>
+    <rsb:call op="jsonproviderGet">
+      <rsb:throw code="500" desc="Updates are not currently supported."/>
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+  <!-- To add support for DELETES please see the DELETE Execution page within the help for further information and examples. -->
+  <rsb:script method="DELETE">
+    <rsb:set attr="method" value="DELETE"/>
+    <rsb:call op="jsonproviderGet">
+      <rsb:throw code="500" desc="Deletes are not currently supported."/>
+      <rsb:push/>
+    </rsb:call>
+  </rsb:script>
+
+</rsb:script>
